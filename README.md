@@ -1,61 +1,20 @@
-# Tiny Package Manager
+# Uplo Package Manager
 
-> A very very simple demo and guide for explaining package manager.
-
-## Introduction
-
-As a JavaScript developer, you may use package manager like [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
-frequently.
-
-However, do you know how a package manager works? Or, you may be curious about how to build a package manager.
-
-Well, the purpose of this guide is not to let you re-invent a new wheel.
-There is no need to do that because both npm and Yarn are mature and stable enough.
-The purpose is just to explain how a package manager works under the hood.
-You can read the code, and the comments will explain how it works.
-
-Note: To simplify the guide and make it as simple as possible,
-this demo doesn't handle some edge cases and catch errors and exceptions.
-If you are really curious about that,
-it's recommended to read the source code of [npm](https://github.com/npm/npm) or [Yarn](https://github.com/yarnpkg/yarn).
+Uplo is a lightweight, fast, and minimal package manager designed to simplify dependency management and software installation with ease and efficiency. Inspired by the simplicity of tiny package managers, Uplo focuses on providing a clean and user-friendly CLI experience with optional theming support for enhanced usability.
 
 ## Features
 
-- [x] Download packages to `node_modules` directory.
-- [x] Simple CLI.
-- [x] Simply resolve dependency conflicts.
-- [x] Flatten dependencies tree.
-- [x] Support lock file. (Like `yarn.lock` or `package-lock.json`)
-- [x] Add a new package through CLI. (Like `yarn add` or `npm i <package>` command)
-- [ ] Run lifecycle scripts. (`preinstall` and `postinstall`)
-- [ ] Symlink the `bin` files.
+- **Minimal and lightweight** — small footprint, fast execution  
+- **Simple CLI interface** — intuitive commands for installing, updating, and removing packages  
+- **Configurable themes** — customize your terminal output colors to suit your preferences  
+- **Cross-platform** — works seamlessly on Linux, macOS, and Windows  
+- **Easy to extend** — modular design to add new features and integrations  
 
-## How to start?
+## Installation
 
-Read the source code in the `src` directory.
-You can read the `src/index.ts` file in the beginning.
+Coming soon — you will be able to install Uplo easily using native system package managers or standalone binaries.
 
-If you would like to try this simple package manager,
-just install it globally:
+---
 
-Via Yarn:
+Feel free to fork, contribute, and help build Uplo into the go-to minimal package manager!
 
-```
-$ yarn global add uplo-package-manager
-```
-
-Via npm:
-
-```
-$ npm i -g uplo-package-manager
-```
-
-Then just go to a directory which contains valid `package.json` and run:
-
-```
-$ tiny-pm
-```
-
-## License
-
-MIT License (c) 2018-present [Pig Fang](https://gplane.win/)
